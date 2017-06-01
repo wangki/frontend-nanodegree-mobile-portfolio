@@ -8,11 +8,12 @@
     <title>Cameron Pittman: Portfolio</title>
 
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
 
     <link href="css/print.css" rel="stylesheet" media="print">
 
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"></noscript>
     <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="css/style.css"></noscript>
     <script>
@@ -139,8 +140,6 @@
               }
           }
       }( this ));
-
-
     </script>
 
 

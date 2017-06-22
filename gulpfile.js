@@ -22,6 +22,13 @@ gulp.task('minhtml', function () {
         .pipe(gulp.dest(dist));
 });
 
+gulp.task('views-minhtml', function () {
+    return gulp.src(src+'/views/*.html')
+        .pipe(minifyhtml())
+        .pipe(gulp.dest(dist+'/views'));
+});
+
+
 //minify css
 gulp.task('mincss', function () {
     return gulp.src(src+'/css/*.css')
@@ -51,4 +58,4 @@ gulp.task('views-minjs', function () {
 
 
 
-gulp.task('build', ['mincss','minjs','minhtml','views-mincss','views-minjs']);
+gulp.task('build', ['mincss','minjs','minhtml','views-minhtml','views-mincss','views-minjs']);

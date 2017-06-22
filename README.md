@@ -53,3 +53,22 @@ The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstra
 
 * <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>
 * <a href="http://getbootstrap.com/components/">Bootstrap's Components</a>
+
+#### Part 3: What I did & Instruction for running a page
+ 
+ In the part 2, I've made few changes to the `index.html` and `main.js`, I'll briefly go over the changes.
+  ##### index.html
+  
+  - I resized image to fit into it's size and purpose.
+  
+  ##### main.js
+  
+  - When Resizing the pizza in `pizza.html` function `changePizzaSizes` causing forced synchronous layout. So I cleared them out.
+  - Pizza generating function is pretty unnecessary, I cleared it out. 
+  
+  
+  ##### Gulp implemented
+  
+  - Created `dist` and `src`  
+  - minifying gulp tasks to load html, js, css faster.
+  

@@ -422,7 +422,7 @@ var resizePizzas = function(size) {
   changeSliderLabel(size);
 
    // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
-    //fixme
+  // Not necessary, changePizza is not calling this function anymore.
   function determineDx (elem, size) {
     var oldWidth = elem.offsetWidth;
     var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
@@ -450,6 +450,7 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
     //fixme
+    // This function will set the width as the input size changes.
   function changePizzaSizes(size) {
     var newwidth;
     switch (size){
@@ -469,9 +470,12 @@ var resizePizzas = function(size) {
 
     var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
 
+    // change sizes of pizzas
     for (var i=0; i<randomPizzas.length; i++){
         randomPizzas[i].style.width = newwidth+"%";
       }
+
+      // This part of function is not necessary. 
     // for (var i = 0; i < pizzas.length; i++) {
     //   var dx = determineDx(pizzas[i], size);
     //   var newwidth = (pizzas[i].offsetWidth + dx) + 'px';
@@ -524,6 +528,7 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
+  // Not necessary, Removed
   // var items = document.querySelectorAll('.mover');
   // for (var i = 0; i < items.length; i++) {
   //   var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
@@ -543,6 +548,7 @@ function updatePositions() {
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
 
+// Not necessary, Removed
 // Generates the sliding pizzas when the page loads.
 // document.addEventListener('DOMContentLoaded', function() {
 //   var cols = 8;

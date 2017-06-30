@@ -1,3 +1,4 @@
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
@@ -54,7 +55,7 @@ The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstra
 * <a href="http://getbootstrap.com/css/">Bootstrap's CSS Classes</a>
 * <a href="http://getbootstrap.com/components/">Bootstrap's Components</a>
 
-#### Part 3: What I did & Instruction for running a page
+#### Part 3: What I did 
  
  In the part 2, I've made few changes to the `index.html` and `main.js`, I'll briefly go over the changes.
   ##### index.html
@@ -71,4 +72,7 @@ The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstra
   
   - Created `dist` and `src`  
   - minifying gulp tasks to load html, js, css faster.
-  
+ 
+#### Part 4 : Instruction
+
+To view the project page, GO TO : https://wk-udadcity-projects.github.io/frontend-nanodegree-mobile-portfolio/dist/index.html
